@@ -1,1 +1,66 @@
-/* test */
+.judul{
+    text-align: center;
+    color: #C40C0C;
+    font-family: Verdana
+}
+.gambar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+} 
+.container{
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(134, 0, 25);
+}
+.button{
+    background-color: #C40C0C;
+    border: none;
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.link{
+    color: #fdfdfd;
+}
+.p{
+    font-family: verdana ;
+    font-size: 15px;
+    text-align: center;
+    color: #C40C0C;
+    font-weight: bold;
+}
+input[type="number"] {
+    display: block;
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+.p2{
+    font-weight: bold;
+    font-family: verdana;
+    font-size: 14px;
+}
+.hitung{
+    display: block;
+    width: 101%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #C40C0C;
+    border-color: #767070;
+    color: #ffffff;
+    font-size: 15px;
+}
+.jawab{
+    font-family: verdana;
+    font-weight: bold;
+}
