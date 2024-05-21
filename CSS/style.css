@@ -17,6 +17,14 @@
     border-radius: 20px;
     box-shadow: 0 0 10px rgb(134, 0, 25);
 }
+.tab{
+    background-color: #C40C0C;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 95%;
+}
 .button{
     background-color: #C40C0C;
     border: none;
@@ -28,8 +36,11 @@
     font-size: 14px;
     border-radius: 10px;
 }
-.link{
-    color: #fdfdfd;
+.section {
+    padding: 20px;
+    border: 2px solid #C40C0C;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 .p{
     font-family: verdana ;

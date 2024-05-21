@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Kalkulaot RevoU</title>
+    <title>Kalkulator RevoU</title>
     <!-- Connect CSS -->
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -8,27 +8,51 @@
     <div class="container">
         <header>
             <!-- Header dan Sub -->
-            <H2 class="judul">Kalkulator Rumus Segitiga</H2>
+            <h2 class="judul">Kalkulator Rumus Segitiga</h2>
         </header>
         <!-- Gambar -->
-        <img class="gambar" src="Image/Frame 619.png" alt="Gambar Segitiga">
-        <!-- Button link Halaman -->
-        <button class="button" type="submit" onclick="Keliling"><a class="link" href="keliling.html">Keliling</a></button>
+        <img class="gambar" src="Image/Frame 619.png" alt="Gambar Segitiga"><br>
         
-        <p class="p">Hitung Luas</p><hr>
-        <!-- Input Angka -->
-        <p class="p2">Alas</p>
-        <input type="number" id="a" placeholder="0" />
-        <p class="p2">Tinggi</p>
-        <input type="number" id="t" placeholder="0" />
+        <!-- Navigasi Tab -->
+        <div class="tab">
+            <button class="tab-button" onclick="showSection('luas-section')">Hitung Luas</button>
+            <button class="tab-button" onclick="showSection('keliling-section')">Hitung Keliling</button>
+        </div>
+        <p></p><br>
 
-        <!-- Button Submit -->
-        <button class="hitung" type="submit" onclick="hitungLuas()">Hitung</button><hr>
-        <!-- Nenampilkan Hasil -->
-        <p class= "jawab"id="hasilluas"></p>
+        <!-- Hitung Luas -->
+        <div id="luas-section" class="section">
+            <p class="p">Hitung Luas</p><hr>
+            <p class="p2">Alas</p>
+            <input type="number" id="a" placeholder="0">
+            <p class="p2">Tinggi</p>
+            <input type="number" id="t" placeholder="0">
+            <button class="hitung" type="button" onclick="hitungLuas()">Hitung Luas</button><hr>
+            <p class="jawab" id="hasilluas"></p>
+        </div>
+
+        <!-- Hitung Keliling -->
+        <div id="keliling-section" class="section" style="display: none;">
+            <p class="p">Hitung Keliling</p><hr>
+            <p class="p2">Sisi 1</p>
+            <input type="number" id="s1" placeholder="0">
+            <p class="p2">Sisi 2</p>
+            <input type="number" id="s2" placeholder="0">
+            <p class="p2">Sisi 3</p>
+            <input type="number" id="s3" placeholder="0">
+            <button class="hitung" type="button" onclick="hitungKeliling()">Hitung Keliling</button><hr>
+            <p class="jawab" id="hasilkeliling"></p>
+        </div>
 
         <!-- Connect Java -->
-        <script src="JS/Script.js"></script><hr>
+        <script src="JS/Script.js"></script>
+        <script>
+            function showSection(sectionId) {
+                document.getElementById('luas-section').style.display = 'none';
+                document.getElementById('keliling-section').style.display = 'none';
+                document.getElementById(sectionId).style.display = 'block';
+            }
+        </script>
     </div>
 </body>
 </html>
